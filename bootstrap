@@ -137,7 +137,7 @@ while (true) {
         $uri .= $name;
 
         if ($value != '') {
-          $uri .= '=' . $value;
+          $uri .= '=' . urlencode($value);
         }
       }
     }
